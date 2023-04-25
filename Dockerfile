@@ -16,4 +16,4 @@ COPY --from=build /opt/node_app/build /usr/share/nginx/html
 
 EXPOSE 80
 
-HEALTHCHECK CMD wget -q -O /dev/null http://localhost || exit 1
+HEALTHCHECK CMD wget -q -O /dev/null 0.0.0.0 || exit 1
